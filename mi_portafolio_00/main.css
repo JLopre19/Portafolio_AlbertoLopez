@@ -1,0 +1,612 @@
+@import url("Style/reset.css");
+
+body{
+    background-color: white;
+    line-height: 1;
+    font-family: 'montserrat';
+    color: #2d2e82;
+    overflow-x: hidden;
+}
+
+img {
+    height: auto;
+    width: auto;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 30px;
+}
+
+/* MENU */
+
+.menu {
+    /*background-color: aqua;*/
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+header > img {
+    height: 30px;
+    width: auto;
+}
+
+.menu__list {
+    display: none;
+}
+
+/* PERFIL */
+
+.title__div {
+    /*background-color: aqua;*/
+    display: flex;
+    align-items: center;
+}
+
+.title__container{
+    /*background-color: orange;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.title__profile {
+    height: auto;
+    width: 40vw;
+}
+
+.title__bio {
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 30vw;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title__subsection {
+    /*background-color: yellow;*/
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title__network {
+    /*background-color: greenyellow;*/
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title__network__item img {
+    margin-left: 7px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__container {
+    /*background-color: burlywood;*/
+    font-size: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.firma__lopre {
+    width: 40vw;
+}
+
+.skills {
+    /*background-color: aqua;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills__title__box {
+    background-color: #e84e1b;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.skills__img {
+    /*background-color: aqua;*/
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__title {
+    margin: 0 50px;
+}
+
+.skills__line {
+    /*background-color: chartreuse;*/
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills__box ul{
+    /*background-color: chocolate;*/
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.hobbies__title__box{
+    background-color: #2d2e82;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hobbies__title{
+    margin: 0 50px;
+}
+
+.hobbies__line {
+    /*background-color: chartreuse;*/
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hobbies__box {
+    /*background-color: aqua;*/
+    width: 100px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hobbies__img {
+    /*background-color: chartreuse;*/
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies__name {
+    /*background-color: cornflowerblue;*/
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.academic__title__box{
+    background-color: #e84e1b;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.academic__title {
+    margin: 0 50px;
+}
+
+.academic__courses {
+    /*background-color: aquamarine;*/
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__list {
+    /*background-color: yellow;*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.experience__section__title__box {
+    background-color: #2d2e82;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.experience__section__title {
+    margin: 0 50px;
+}
+
+.experience__box {
+    /*background-color: darkolivegreen;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.experience__img {
+    width: 500px;
+}
+
+.experience__info {
+    /*background-color: darkcyan;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.experience__text {
+    text-align: center;
+}
+
+.experience__description {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #2d2e82;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e84e1b;
+    color: white;
+    border: 0;
+}
+
+.formcontacto__text {
+    /*background-color: lightskyblue;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.formcontacto__title__box{
+    background-color: #e84e1b;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.formcontacto__title {
+    margin: 0 50px;
+}
+
+.formcontacto__subtext {
+    width: 70vw;
+}
+
+.formcontacto__form {
+    /*background-color: lightcoral;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formcontacto__input {
+    width: 60vw;
+    height: 40px;
+    border: 2px solid #2d2e82;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.formcontacto__textarea {
+    width: 60vw;
+    padding: 10px 15px;
+    border: 2px solid #2d2e82;
+    border-radius: 10px;
+}
+
+.footer__rodapie {
+    /*background-color: firebrick;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__pie {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/* TABLETAS */
+
+@media (min-width: 768px) {
+    .title__profile {
+        height: auto;
+        width: 30vw;
+    }
+
+    .title__bio{
+        /*background-color: red;*/
+        width: 50VW;
+        font-size: 30px;
+    }
+
+    .title__subsection {
+        /*background-color: yellow;*/
+        width: 70vw;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .title__network {
+        width: 70vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about__container {
+        width: 50vw;
+    }
+
+    .firma__lopre {
+        width: 30vw;
+        margin-right: 50px;
+    }
+
+    .skills__title {
+        /*background-color: blueviolet;*/
+        margin: 0 6vw;
+    }
+
+    .skills__line{
+        padding: 50px;
+    }
+
+    .hobbies__title {
+        margin: 0 6vw;
+    }
+
+    .academic__title {
+        margin: 0 6vw;
+    }
+
+    .academic__courses {
+        /*background-color: hotpink;*/
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .experience__box {
+        /*background-color: darkolivegreen;*/
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .experience__description{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience__title {
+        /*background-color: green;*/
+        width: 20vw;;
+    }
+
+
+    .formcontacto__title {
+        margin: 0 6vw;
+    }
+
+}
+
+/* ESCRITORIO */
+
+@media (min-width: 1024px) {
+    .menu{
+        padding: 20px 100px;
+        font-size: 16px;
+    }
+
+    .menu__list {
+        display: flex;
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .menu__list__item__contacto {
+        display: none;
+    }
+
+    .title__profile {
+        height: auto;
+        width: 20vw;
+    }
+
+    .title__bio{
+        /*background-color: chocolate;*/
+        font-size: 40px;
+    }
+
+    .title__subsection {
+        /*background-color: yellow;*/
+        width: 70vw;
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about__container {
+        width: 50vw;
+        font-size: 20px;
+    }
+
+    .firma__lopre {
+        width: 20vw;
+        margin-right: 50px;
+    }
+
+    .skills__title {
+        /*background-color: darkcyan;*/
+        padding: 0;
+        margin: 0 8vw;
+    }
+
+    .hobbies__title {
+        margin: 0 8vw;
+    }
+
+    .academic__title {
+        margin: 0 8vw;
+    }
+
+    .formcontacto__input {
+        width: 500px;
+        height: 40px;
+        border: 2px solid #2d2e82;
+        border-radius: 10px;
+        padding: 0 15px;
+    }
+    
+    .formcontacto__textarea {
+        width: 500px;
+        padding: 10px 15px;
+        border: 2px solid #2d2e82;
+        border-radius: 10px;
+    }
+
+}
